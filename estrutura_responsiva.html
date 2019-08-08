@@ -1,0 +1,1098 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ronaldinho Gaúcho - O Bruxo</title>
+    <meta charset="utf-8"/>
+    
+    <!-- define a viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- inserindo css do Bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all" />
+	
+	<!-- inserindo css do Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all" />
+	
+	<!-- CSS personalizado -->
+	<link rel="stylesheet" href="css/Estilos.css" media="all"/>
+
+<!-- JQuery da galeria -->
+<script type="text/javascript" src="js/jquery.js" ></script>
+<script type="text/javascript" >
+
+$(document).ready(function(){
+$(".thumbnail").click(function(){
+var address= $(this).attr("src");
+$("#popup").fadeIn("slow");
+$("#lightbox").attr("src",address);
+});
+$("#close").click(function(){
+$("#popup").fadeOut("fast");
+});
+});
+</script>
+
+<style type="text/css">
+
+#popup{
+background:#000000;
+height:100%;
+width: 100%;
+position:fixed;
+top: 0;
+left: 0;
+display: none;
+}
+#center{
+border: 10px solid #121212;
+margin: 6% auto;
+width: 750px;
+}
+#close{
+float: right;
+position: absolute;
+top: 12%;
+}​
+
+</style>
+
+
+</head>
+    
+<body>
+    
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Cabeçalho do menu -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Ronaldinho Gaúcho</a>
+    </div>
+
+    <!-- itens do menu -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#historia">História</a></li>
+<li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Clubes<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#gremio">Grêmio</a></li>
+<li><a href="#parissaintgerman">Paris Saint-German</a></li>
+<li><a href="#barcelona">Barcelona</a></li>
+<li><a href="#milan">Milan</a></li>
+<li><a href="#flamengo">Flamengo</a></li>
+<li><a href="#atleticomineiro">Atlético Mineiro</a></li>          
+<li><a href="#queretaro">Querétaro</a></li>		  
+<li><a href="#fluminense">Fluminense</a></li>		  
+		  </ul>
+        </li>
+
+<li><a href="#seleçaobrasileira">Seleção Brasileira</a></li>
+<li><a href="#titulos">Títulos</a></li>
+<li><a href="#premios">Prêmios</a></li>
+<li><a href="#faleconosco">Fale Conosco</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    
+    <!-- Slider da aplicação -->
+    <div class="divslider" style="background-color: black;">
+        <div class="container-slider">
+            <div class="col-xs-9 hidden-xs">
+                <div id="sliderprincipal" class="carousel slide" data-ride="carousel" data-interval="3000" style="width:100%;">
+                    
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#sliderprincipal" data-slide-to="0"></li>
+                        <li data-target="#sliderprincipal" data-slide-to="1"></li>
+                        <li data-target="#sliderprincipal" data-slide-to="2"></li>
+             <li data-target="#sliderprincipal" data-slide-to="3"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                            <img src="imagens/ronaldinho.png" alt="Imagem slider 01" style="width: 100%;" />
+                        </div>
+
+                        <div class="item">
+                            <img src="imagens/ronaldinhobarcelona.jpg" alt="Imagem slider 02" style="width: 100%;" />
+                        </div>
+
+                        <div class="item">
+                            <img src="imagens/ronaldinho3.jpg" alt="Imagem slider 03" style="width: 100%;" />
+                        </div>
+                        <div class="item">
+                            <img src="imagens/ronaldinho.jpg" alt="Imagem slider 04" style="width: 100%;" />
+                        </div>
+                    </div>
+				
+                     <!-- Controles -->
+
+                          <a class="left carousel-control" href="#sliderprincipal" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                          </a>
+
+                          <a class="right carousel-control" href="#sliderprincipal" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                          </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Sobre o site</h2>
+	
+	<p>
+	Este é um site para você que é fã do Ronaldinho Gaúcho ou quer apenas saber sobre a trajetória de sua vida e carreira. Aqui você pode encontrar tudo sobre sua carreira no futebol brasileiro e internacional, desde a sua estréia no Grêmio até seu final de carreira pelo fluminense.
+	</p> 
+	
+	<p>
+	Aqui você pode encontrar informações sobre sua história na seleção brasileira e também nos clubes no qual passou, além dos títulos conquistados pelo Brasil como copa do mundo, copa américa e copa das confederações e pelos clubes como champions league, mundial de clubes, libertadores e os principais campeonatos e copas dos respectivos países pelo qual passou.
+	</p>
+
+	<p>
+	Neste site também contém momentos da ascenção do jogador, isto é, no melhor momento de sua carreira que foi no FC Barcelona em meados de 2005/2006 onde ele conquistou sua primeira bola de ouro e diversos títulos coletivos.
+	</p>
+	
+	<p>
+	Além dos títulos coletivos de Ronaldinho, você também pode encontrar todos os prêmios individuais que ele conquistou ao longo de sua carreira como a bola de ouro e chuteira de ouro, dentre outras dezenas de premiações.
+	</p>
+	
+	<p>
+	Fique agora por dentro de tudo e saiba mais sobre a vida de Ronaldinho Gaúcho O Bruxo.
+	</p>
+	
+<section id="rolesaleatorios">
+	<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						
+						<h2>Rolês Aleatórios</h2>
+						
+					</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-xs-12 col-sm-4 col-md-3">	
+									<div class="thumbnail" style="background-color:#eee;">
+										<img src="imagens/roles/roles1.jpg" class="img-thumbnail" alt=""/>
+										<div class="caption">
+											<p style="font-style:oblique;">
+											<p><strong>Ronaldinho "médico"</strong></p>
+											Esta é uma das fotos que mais chamam a atenção dos fãs de Ronaldinho. Como ele foi parar dentro de um hospital, usando jaleco e touca de médico? Detalhe: de óculos escuros. Bom, na verdade, ele não está em um hospital, mas sim em uma fábrica de suplementos alimentares que o contratou como garoto-propaganda. "Visita à fábrica da Nugevity, empresa parceira da NASA, aqui na Flórida. Conhecendo a estrutura e controle de qualidade dos produtos", postou Ronaldinho em janeiro de 2016.
+								
+										</div>
+									</div>
+								</div>	
+				
+								<div class="col-xs-12 col-sm-4 col-md-3">	
+									<div class="thumbnail" style="background-color:#eee;">
+										<img src="imagens/roles/roles2.jpg" class="img-thumbnail" alt=""/>
+										<div class="caption">
+											<p style="font-style:oblique;">
+											<p><strong>Ronaldinho boliviano</strong></p>
+											Outra imagem que virou símbolo dos "rolês aleatórios" de Ronaldinho foi esta, em que ele aparece vestido com roupas típicas bolivianas. A cena aconteceu em 2013, quando ele jogava no Atlético-MG e viajou a La Paz para enfrentar o The Strongest pela Libertadores. O governador ofereceu um almoço para a delegação brasileira e prestou uma homenagem a Ronaldinho, presenteando o craque com um poncho, um gorro e um barquinho. O craque retribuiu a gentileza: além de usar o traje, entregou ao político a sua camisa 10 do Galo.
+										</div>
+									</div>
+								</div>
+				
+								<div class="col-xs-12 col-sm-4 col-md-3">	
+									<div class="thumbnail" style="background-color:#eee;">
+										<img src="imagens/roles/roles3.jpg" class="img-thumbnail" alt=""/>
+										<div class="caption">
+											<p style="font-style:oblique;">
+											<p><strong>Ronaldinho na Rússia</strong></p>
+											A participação de Ronaldinho Gaúcho tocando percussão na cerimônia de encerramento da Copa do Mundo foi a melhor coisa que a torcida brasileira poderia esperar naquele dia. Não só pelo orgulho de ver uma lenda como ele ganhando o devido reconhecimento, mas também pelos memes. Os fãs lembraram de outros momentos curiosos envolvendo o craque e chegaram à conclusão de que ele é o rei dos "rolês aleatórios". Sabe quando você perde a hora de voltar para casa e vai parar em um lugar totalmente inesperado, sem fazer a menor ideia do que está fazendo ali? 
+												
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-xs-12 col-sm-4 col-md-3">	
+									<div class="thumbnail" style="background-color:#eee;">
+										<img src="imagens/roles/roles4.jpg" class="img-thumbnail" alt=""/>
+										<div class="caption">
+											<p style="font-style:oblique;">
+											<p><strong>Ronaldinho medieval</strong></p>
+											Esta imagem costuma ser compartilhada para reforçar a teoria de que Ronaldinho é um "viajante do tempo". Em 2004, ao lado de outros astros como Beckham, Totti e Roberto Carlos, ele estrelou um comercial da Pepsi que mostra uma batalha medieval de um exército armado contra a habilidade dos craques. Nem precisa dizer quem levou a melhor.                                                                                                                                                      	
+												
+										</div>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+	
+</section>
+
+	<!-- Fim do slider da aplicação -->​
+    
+    
+    
+    <!-- fim da área de destino-->
+    
+	<!-- área de conteúdo do site -->
+	<section id="historia">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>História</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhohistoria.png" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						<p>Ronaldo de Assis Moreira, mais conhecido como Ronaldinho Gaúcho ou simplesmente Ronaldinho (Porto Alegre,
+						21 de março de 1980), é um ex-futebolista brasileiro que atuava como meia-atacante. Atualmente é embaixador do Barcelona,
+						clube em que fez história. Uma de suas marcas registradas é o aspecto dentuço, seus dribles fantásticos e usar uma faixa na cabeça após adotar os cabelos longos.
+						Extremamente habilidoso e muito preciso em seus chutes e passes, é considerado por muitos especialistas como o futebolista mais talentoso de sua geração.</p>
+						
+						<p>
+						Na infância, a sua principal diversão era brincar com a bola de futebol,
+						junto dos seus melhores amigos. Com sete anos começou a jogar na escola de futebol infantil do Grêmio.
+						Aos oito anos seu pai morreu, e ele recebeu apoio de sua mãe, irmã e de seu irmão mais velho como figura paterna.
+						Desde pequeno, Ronaldinho já demonstrava habilidade com a bola, como se pode ver em vídeos caseiros da sua família.
+						Entre seus ídolos, além do seu irmão Assis,
+						encontram-se Rivaldo e Ronaldo (com os quais ganhou a Copa do Mundo de 2002), Valdo, Romário, Zico, Rivellino, Maradona e Pelé.
+						</p>	
+	
+						<p><strong>Defendeu os clubes:</strong></p>
+						<ul>
+						<li>Grêmio</li>
+						<li>Paris Saint-German</li>
+						<li>Barcelona</li>
+						<li>Milan</li>
+						<li>Flamengo</li>
+						<li>Atlético Mineiro</li>
+						<li>Querétaro</li>
+						<li>Fluminense</li>
+						
+						
+						</ul>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+	
+	<section id="gremio">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Grêmio</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhogremio.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p>
+						A carreira profissional de Ronaldinho iniciou-se no time do Grêmio,
+						tendo como seu primeiro treinador Sebastião Lazaroni. Em 1997 ganhou o título Sub-17 jogando pelo time.
+						Sua primeira aparição como profissional ocorreu em 1998, na Copa Libertadores da América,
+						onde logo sua habilidade e seu grande domínio de bola começaram a ser notados pelos clubes.
+						</p>
+						
+						<p>
+						Além da consagração no jogo contra a Seleção Venezuelana pela Copa América, Ronaldinho também brilhou nas finais do Campeonato Gaúcho de 1999,
+						quando fez o gol do título para o Grêmio contra o Internacional, além de, audaciosamente,
+						ter realizado dribles fantásticos sobre o capitão do tetracampeonato de 1994, Dunga.
+						Sua atuação nessa final foi um importante fator para sua convocação à Seleção Brasileira pelo então técnico Vanderlei Luxemburgo.
+						</p>
+						
+						<p>
+						Um fato curioso sobre a convocação é que ele Ronaldinho só foi convocado depois que o técnico da Seleção
+						cortou Edílson Capetinha da equipe por ter provocado e se envolvido em uma briga pelo Corinthians,
+						na final do Campeonato Paulista contra o Palmeiras.
+						</p>
+					
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+	
+	<section id="parissaintgerman">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Paris Saint-German</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhopsg.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p>
+						Durante sua passagem pelo Paris Saint-Germain,
+						Ronaldinho teve problemas com o treinador Luis Fernández, pois este alegava que Ronaldinho estava frequentando demais a vida noturna parisiense,
+						e deixando o futebol de lado. Ele desenvolveu uma reputação de obter desempenho brilhante contra as maiores equipes,
+						mas de não jogar bem contra as equipes pequenas.
+						</p>
+						
+						<p>
+						Depois da Copa do Mundo de 2002, tendo demonstrado o seu valor no cenário internacional,
+						o interesse dos grandes clubes aumentou. Em 2003, Ronaldinho deixou claro que queria deixar o Paris Saint-Germain,
+						pois lá não havia conquistado títulos importantes. Após várias propostas de clubes europeus, inclusive de equipes como o Manchester United,
+						quem acabou levando o craque brasileiro foi o Barcelona.
+						</p>
+					
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+	
+	<section id="barcelona">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Barcelona</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinho2.png" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p>
+						No dia 19 de julho de 2003, o presidente do Barcelona,
+						Joan Laporta, adquiriu o passe de Ronaldinho por 21 milhões de euros.
+						Ronaldinho disse também ter assinado com o Barcelona em vez do Manchester United por sua amizade com o ex-executivo da Nike no Brasil e em Barcelona,
+						o então vice-presidente encarregado de esportes, Sandro Rosell.
+						Ao assinar com o Barcelona, Ronaldinho seguiu os passos de vários ilustres jogadores que tiveram carreiras bem sucedidas no clube,
+						como Evaristo de Macedo, Romário, Ronaldo e Rivaldo.
+						</p>
+						
+						<p>
+						Logo o Barcelona promoveu um amistoso para mostrar sua nova contratação e o clube escolhido foi o Milan.
+						Em sua estreia, Ronaldinho ajudou seu time marcando um gol na vitória por 2 a 0. Durante a temporada 2003-04, sua primeira no clube,
+						suas jogadas levaram o Barcelona a terminar em 2° lugar no Campeonato Espanhol.
+						</p>
+						
+						<p><strong>O auge:</strong></p>
+						
+						<p>
+						Mas foi na temporada 2004-05 que o craque se consagrou realizando jogadas fantásticas, conquistando o Campeonato Espanhol e a Supercopa da Espanha,
+						além do título de Melhor Jogador do Mundo, rapidamente se tornando um dos maiores ídolos do clube.
+						</p>
+						
+						<p>
+						Na temporada seguinte, a de 2005-06, repetiu o feito conquistando novamente o Campeonato Espanhol.
+						Nesta temporada, ficou marcado por sua atuação no jogo contra o Real Madrid, o chamado El Clásico,
+						realizado em 19 de novembro de 2005. Ronaldinho marcou duas vezes e foi o grande destaque da vitória por 3 a 0 na casa do adversário,
+						o Estádio Santiago Bernabéu. Após seu segundo gol na partida,
+						marcado após uma belíssima jogada em que passou por vários adversários antes de concluir com extrema precisão,
+						ele foi aplaudido de pé pelos torcedores merengues presentes ao Bernabéu.
+						O jogo ficou marcado principalmente por isto, pelo fato do Real historicamente ser o grande arquirrival do Barça.
+						Nesta temporada, ainda conquistou os títulos da Liga dos Campeões da UEFA de 2005-06 e, novamente, da Supercopa da Espanha.
+						</p>
+						
+						<p>
+						Entre os anos de 2004 e 2005, defendendo o Barcelona e a Seleção Brasileira, viveu o auge de sua carreira. Consagrou-se como o Melhor Jogador do Mundo,
+						segundo a FIFA. Em 2005 ganhou o Ballon d'Or, outro importante prêmio, entregue pela revista francesa France Football,
+						que elege o melhor jogador atuando na Europa a cada temporada.
+						</p>
+						
+						<p>
+						No dia 29 de março de 2006, um estudo apontou Ronaldinho como o jogador de maior valor comercial no mundo,
+						deixando para trás dois ingleses David Beckham e Wayne Rooney. Sua imagem foi avaliada em 47 milhões de euros,
+						a de Beckham, 44,9 milhões e a de Rooney, 43,7 milhões.
+						</p>
+						
+						<p>
+						Ronaldinho ao lado de Deco.
+						Atuou em seu 200° jogo pelo Barcelona numa partida contra o Osasuna, em 3 de fevereiro de 2008.
+						No entanto, sua campanha de 2007-08 como um todo foi marcada por contusões,
+						e uma lesão muscular na perna direita em 3 de abril prematuramente terminou com a sua temporada.
+						Em 19 de maio, Laporta afirmou que Ronaldinho precisava de "um novo desafio", alegando que ele precisava de um novo clube para que pudesse reviver sua carreira.
+						O empresário Thaksin Shinawatra, proprietário do Manchester City, confirmou em 6 de junho que estava interessado em contratá-lo.
+						</p>
+						
+						<p>
+						Ronaldinho e seu companheiro de Barcelona, Lionel Messi,
+						protagonizaram um amistoso contra o racismo na Venezuela, em 28 de junho de 2008, que terminou em um empate por 7 a 7.
+						Ronaldinho marcou dois gols e ainda deu duas assistências no que seria sua última partida como jogador do Barcelona.
+						</p>
+					
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+	
+	<section id="milan">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Milan</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhomilan.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p>
+						Em julho de 2008, Ronaldinho recusou uma oferta de 25,5 milhões de euros do Manchester City e acabou se transferindo para o Milan por 18,5 milhões de euros,
+						num contrato de cinco anos, com um salário em torno de 6,5 milhões de Libras por ano.
+						Com o número 10 já ocupado por Clarence Seedorf, ele selecionou a 80 como seu número na camisa, porque 1980 foi seu ano de nascimento.
+						</p>
+						
+						<p>
+						Ronaldinho pelo Milan, numa partida contra o Real Madrid.
+						Marcou seu primeiro gol pelo Milan numa vitória sobre a rival Internazionale (3 a 0),
+						de cabeça, após cruzamento de Kaká, em 20 de setembro de 2008. Ele terminou sua primeira temporada no Milan com 10 gols em 35 jogos em todas as competições.
+						Após um bom começo de temporada, acabou, no fim, figurando entre os reservas, terminando sua primeira temporada de forma decepcionante.
+						</p>
+						
+						<p>
+						Sua segunda temporada não começou com uma nota elevada. Depois de um tempo,
+						reencontrou sua forma e tornou-se indiscutivelmente o melhor jogador do Milan na temporada. Ele mudou seu papel de lateral a uma função ofensiva.
+						</p>
+						
+						<p>
+						No dia 10 de dezembro de 2009, foi eleito o futebolista da década pela revista inglesa World Soccer,
+						ficando à frente de jogadores como Lionel Messi e Ronaldo.
+						</p>
+						
+						<p>
+						Em 10 de dezembro de 2009 marcou dois gols contra o Juventus, selando uma vitória por 3 a 0 para os Rossoneri.
+						No jogo seguinte contra o Siena, em 17 de janeiro de 2010, marcou seu primeiro hat-trick para o Milan, quando converteu um pênalti,
+						marcou de cabeça e fechou o placar com um chutaço, a 30 metros de distância do gol.
+						</p>
+						
+						<p>
+						A partir de 13 de abril de 2010, terminou a temporada como líder de assistências na Serie A,
+						com um total de 13. Uma nota negativa foi que ele perdeu três pênaltis na temporada 2009-10.
+						</p>
+					
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+	
+	<section id="flamengo">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Flamengo</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhoflamengo.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p>
+						Insatisfeito com o banco de reservas no Milan, Ronaldinho manifestou interesse em voltar a atuar no Brasil para ficar mais perto da convocação para a Copa de 2014.
+						Ainda com contrato em vigor, o vice-presidente do clube italiano Adriano Galliani admitiu negociar o jogador com clubes brasileiros e logo surgiu o nome do Grêmio,
+						seu ex-clube, como um dos possíveis destinos do craque. Palmeiras e Flamengo também buscavam contratar o jogador, que negociava com todos ao mesmo tempo.
+						Após semanas de muitas especulações e negociações arrastadas, e após o próprio Ronaldinho declarar que "se dependesse de mim, já estaria no Grêmio",
+						o Grêmio desistiu de contratar o jogador, mesmo após ter preparado uma festa para receber o jogador e comemorar o acordo no Estádio Olímpico junto a torcida
+						do clube. Dias depois foi a vez do Palmeiras desistir de negociar com Ronaldinho, onde seu irmão e empresário, Assis,
+						foi duramente criticado por fazer leilão com o jogador e por ter afirmado que a transação estava fechada com o clube e não cumprir com o acordo.
+						Com o caminho livre, Ronaldinho fechou a negociação com o rubro-negro da Gávea, causando grande felicidade aos torcedores cariocas.
+						</p>
+						
+						<p>
+						No dia 10 de janeiro de 2011, foi confirmado como jogador do Flamengo e, segundo seus amigos mais próximos,
+						ele sempre manifestou o desejo de jogar com a camisa do clube. Assinou um contrato de quatro anos com a equipe carioca.
+						</p>
+						
+						<p>
+						A apresentação de Ronaldinho foi realizada dia 12 de janeiro de 2011 no Estádio da Gávea,
+						onde o jogador foi recebido por mais de 20 mil torcedores, juntamente com a presidente Patrícia Amorim.
+						A apresentação contou com a presença de Ivo Meirelles, presidente da Estação Primeira de Mangueira, Dudu Nobre,
+						Vágner Love e outras celebridades. A torcida foi ao delírio quando o craque se pronunciou pela primeira vez vestindo a camisa do Flamengo.
+						No mesmo dia da apresentação do jogador, fotos revelaram o valor da multa contratual do craque: 400 milhões de reais.
+						O valor astronômico valia para clubes estrangeiros e cairia para 325 milhões de reais para clubes brasileiros.
+						
+						</p>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</section>
+	
+	<section id="atleticomineiro">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Atlético Mineiro</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhoatleticomineiro.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p>
+						Quando Ronaldinho rescindiu seu contrato com o Flamengo,
+						Cuca, técnico do Atlético, assim que soube da notícia fez uma ligação para o presidente atleticano Alexandre Kalil dizendo que "o nosso camisa 10 saiu do Flamengo".
+						Kalil, que estava no Rio de Janeiro para contratar outro jogador, marcou então uma reunião com Assis, irmão e agente do jogador e Ronaldinho.
+						Na conversa ficou acertado que Ronaldinho se apresentaria e começaria as atividades no dia seguinte. Sem alarde e com muita expectativa,
+						principalmente pelas informações que a mídia passava de que o jogador já estaria acertado com o Atlético, criou-se um clima de expectativa em torno do clube,
+						e no dia 4 de junho de 2012 o jogador acertou com o clube mineiro e começou suas atividades.
+						<p>
+						
+						</p>
+						Antes mesmo do anúncio oficial da contratação, a emissora de TV por assinatura SporTV mostrou imagens ao vivo do jogador treinando com o restante do elenco
+						atleticano, na Cidade do Galo, centro de treinamentos do clube, e essas foram as primeiras imagens de Ronaldinho com a camisa do Atlético,
+						captadas por um helicóptero que sobrevoava o centro de treinamentos atleticano e transmitia ao vivo pela SporTV e, pouco depois, também pela Rede Globo.
+						 O contrato inicial foi válido por 6 meses (junho a dezembro) e o jogador recebeu cerca de 300 mil reais por mês, 1/4 do que o jogador recebia no Flamengo.
+						 Logo que chegou a Belo Horizonte, ele revelou que seu objetivo era arrematar uma conquista importante para o clube mineiro:
+						"Fazer o Atlético voltar a ganhar um título de expressão é o desafio que me motiva".
+						</p>
+					
+					</div>
+				</div>	
+			</div>
+		</div>
+	</section>	
+		
+	<section id="queretaro">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Querétaro</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhoqueretaro.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p>
+						Em 5 de setembro de 2014, Ronaldinho assina com o Querétaro Fútbol Club, time do México, por 2 anos.
+						Seu novo time coincidentemente tem o apelidado de "Gallos Blancos", mesmo animal mascote do Atlético-MG, seu ex-clube.
+						</p>
+						
+						<p>
+						“	Agora é oficial! Camiseta 49!! Meu número da sorte!! Espero repetir e viver as mesmas alegrias!!
+						#SiempreGallos. Escolhi o Mexico pelo carinho que sempre recebi aqui. Muito motivado para representar o @Club_Queretaro. Obrigado @OlegarioVazquez!!	”
+						Estreou pelo Gallos em 18 de setembro de 2014, em jogo válido pela Copa do México, no Estádio Corregidora lotado com 35 mil torcedores, que viram a derrota
+						do Querétaro para o Tigres por 1 a 0, e Ronaldinho sofrer e perder um pênalti. Em 21 de setembro de 2014, marcou seu primeiro gol, de pênalti,
+						o primeiro gol do jogo na vitória de seu time por 4 a 1 sobre o Chivas, na 9ª rodada do Campeonato Mexicano.
+						</p>
+						
+						<p>
+						Em 29 de março de 2015, após seis meses sem muito brilho pelo Querétaro, inclusive recebendo criticas da mídia local,
+						Ronaldinho Gaúcho comemorou o seu primeiro título pelo clube, a Copa El Rancho, que foi disputada em Frisco, nos Estados Unidos.
+						A equipe venceu o Puebla FC nos pênaltis, por 4 a 1, após empatar em 3 a 3 no tempo normal. Ronaldinho anotou um dos gols,
+						aos seis minutos de jogo, quando converteu um pênalti, e depois ainda deu assistência para o gol do também brasileiro Willian da Silva,
+						aos 18 minutos da primeira etapa. Deixou o jogo aos 30 minutos do segundo tempo, ficando de fora das cobranças de pênaltis.
+						</p>
+					
+					</div>
+				</div>		
+			</div>
+		</div>
+	</section>
+			
+	<section id="fluminense">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Fluminense</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhofluminense.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p>
+						pós deixar o Querétaro e passar por um período de negociações com diversos clubes, Ronaldinho acertou a sua ida para o Fluminense.
+						Ele foi anunciado e apresentado no dia 11 de julho de 2015, recebendo a camisa 10 do clube carioca.
+						O jogador foi contratado após um período de negociação em que dois outros clubes anunciaram estar próximos de contratar o jogador. Primeiro foi o Vasco,
+						segundo maior rival do clube. Dois dias após Ronaldinho deixar o Querétaro, o presidente do Vasco,
+						Eurico Miranda, anunciou em entrevista coletiva que estava 90% fechado com o craque. Dias depois,
+						foi a vez do presidente do clube turco Antalyaspor dizer que estava próximo de acertar com o jogador,
+						dizendo que em dois dias poderia tornar oficial. Apesar das declarações dos dirigentes, nada estava certo e Ronaldinho demorava a definir seu futuro.
+						Foi quando a imprensa brasileira revelou que o jogador estava próximo do Fluminense, clube que até então não havia se pronunciado sobre Ronaldinho Gaúcho.
+						O portal Globo Esporte revelou que o jogador havia se reunido com a diretoria do clube carioca e a transferência estava próxima de acontecer.
+						Após as especulações, Peter Siemsen, presidente do Fluminense, confirmou negociações em entrevista a ESPN,
+						dizendo que só dependia do atleta para que a contratação acontecesse. Um dia após o presidente confirmar as negociações,
+						e a imprensa brasileira já noticiar o acerto, finalmente o jogador assinou contrato com o Fluminense.
+						O anúncio veio primeiro através de uma das redes sociais do atleta, e logo após pelo clube.
+						Logo após o anúncio oficial, Ronaldinho grava vídeo já com a camisa do Flu e deixa seu recado:
+						"Vamos pra cima de geral". O vice-presidente do clube, Mário Bittencourt, provocou o rival Vasco, que havia anunciado que estava perto de contratar o atleta:
+						" Enquanto uns brigavam pelo lado da arquibancada, que por direito é do Fluminense, nós estávamos contratando um jogador que achavam que seria deles
+						" afirmou Mário Bittencourt.
+						</p>
+						
+						<p><strong>Desempenho na temporada</strong></p>
+						
+						<p>
+						Ronaldinho estreou pelo Fluminense no dia 01/08/2015, contra o Grêmio, clube onde foi revelado, sendo recebido com "mosaico 3D" pela torcida tricolor.
+						O Fluminense venceu o jogo por 1 a 0 e alcançou a terceira colocação do Campeonato Brasileiro.[125] O craque, apesar do pouco tempo de preparação,
+						surpreendeu e jogou os 90 minutos, se destacando. Participou da jogada do gol e saiu aplaudido dos gramados. O jogador se mostrou empenhado e comemorou o
+						gol do atacante Marcos Júnior como se fosse seu. Em entrevista após o jogo, R10 disse estar "feliz da vida" por estrear com vitória e disse que o objetivo
+						na competição era ser campeão.[126] Mais de 33 mil pessoas estiveram presentes no jogo de estréia do craque pelo Fluminense.[127] Fez seu segundo jogo no dia
+						9 do mesmo mês, contra o Avaí, fora de casa, na derrota do Fluminense por 1 a 0. Ronaldinho foi o destaque do Fluminense, que não tinha Fred lesionado.
+						[128] O jogador esteve perto de fazer gol por 3 vezes, batendo falta, e por pouco não fez um gol olímpico.
+						</p>
+						
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
+	<section id="seleçaobrasileira">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Seleção Brasileira</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhobrasil.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p><strong>Brasil</strong></p>
+						
+						<p>
+						Estreou na Seleção Brasileira em um jogo contra a Letônia, em junho de 1999. Porém, foi na Copa América de 1999,
+						disputada no Paraguai, que se destacou pela primeira vez na seleção, marcando um gol na goleada por 7-0 sobre a Venezuela,
+						ao dar um chapéu no zagueiro e em seguida chutar forte no canto do goleiro Vega.
+						</p>
+						
+						<p><br><strong>Copa do Mundo de 2002</strong><br></p>
+						
+						<p>
+						Na Copa do Mundo de 2002, Ronaldinho teve relevância na conquista do quinto título brasileiro em Copas do Mundo ao marcar um gol de falta contra
+						a Inglaterra na vitória de virada por 2-1 do Brasil, pelas quartas-de-final em Shizuoka, no Japão.
+						</p>
+						
+						<p>
+						Alguns avaliam que o goleiro inglês Seaman falhou no referido lance. Após o gol, Ronaldinho fez uma falta grave em um jogador inglês e foi expulso,
+						não participando do jogo da semifinal contra a Turquia, na cidade japonesa de Saitama.
+						</p>
+						
+						<p>
+						Depois de cumprir a suspensão contra a seleção turca, jogou como titular na partida final contra a Alemanha,
+						derrotada pela Seleção Brasileira por 2-0.
+						</p>
+
+						<p><br><strong>Copa do Mundo de 2006</strong><br></p>
+
+						<p>
+						Ronaldinho cobrando um escanteio na Copa do Mundo de 2006.
+						O melhor jogador da Europa e do mundo era a maior promessa brasileira para a Copa do Mundo FIFA de 2006,
+						realizada na Alemanha. Porém, demonstrou um futebol aquém do que se esperava e recebeu várias críticas dos torcedores brasileiros.
+						Fãs do futebol do craque alegaram que Ronaldinho foi prejudicado pelo esquema tático da seleção brasileira. Ronaldinho jogava de atacante no Barcelona,
+						sem grandes preocupações defensivas. Porém, por determinação do então técnico da Seleção Brasileira, Carlos Alberto Parreira,
+						Ronaldinho atuou durante o Mundial de 2006 como um meia-atacante, mais afastado da área e tendo que participar defensivamente.
+						O único jogo em que ele atuou na mesma posição em que jogava no Barça foi na partida contra a França, e mesmo assim Ronaldinho teve um péssimo desempenho,
+						chegando inclusive a tropeçar na bola.
+						</p>
+
+						<p>
+						Uma estátua de Ronaldinho com 7,25 metros de altura, construída pela artista plástica Kattielly Lanzini especialmente para a Copa,
+						que estava instalada na Avenida Getúlio Vargas, na cidade de Chapecó, em Santa Catarina, chegou a ser incendiada,
+						um dia após a eliminação da Seleção Brasileira pela França, com uma atuação notável do meia Zinédine Zidane.
+						A obra custou R$ 5,5 mil e a artista pretendia vendê-la por R$ 7 mil.
+						A artista autora da obra abriu um Boletim de Ocorrência para punir os responsáveis pelo vandalismo.
+						</p>
+						
+						<p><strong>Jogos Olímpicos de 2008</strong></p>
+						
+						<p>
+						Recebeu uma nova chance na seleção brasileira nas Olimpíadas de 2008, na China.
+						Foi convocado pelo técnico Dunga e comandou a equipe, já que era o jogador mais velho do elenco.
+						</p>
+
+						<p>
+						O Brasil fez uma campanha razoável no torneio, se classificando com 100% de aproveitamento na primeira fase e sendo eliminado pela maior rival,
+						a Argentina, comandada por Lionel Messi (ex-companheiro de Ronaldinho no Barcelona), nas semi-finais.
+						</p>
+
+						<p>
+						Os argentinos viriam a conquistar mais uma vez a medalha de ouro olímpica,
+						título conquistado, no Jogos Olímpicos de Verão de 2016, pelo Brasil.
+						</p>
+
+						<p><strong>Fora da Copa do Mundo de 2010</strong></p>
+						
+						<p>
+						Sua última partida pela seleção principal antes da Copa aconteceu durante as eliminatórias. Foi no jogo entre Brasil e Peru, no Beira-Rio,
+						onde o Brasil venceu por 3-0, ele entrou no intervalo tempo e não participou de nenhum gol.
+						<p>
+
+						<p>Muitas eram as expectativas sobre a convocação da Seleção para a Copa do Mundo de 2010. Dos que não vinham sendo chamados recentemente,
+						Ronaldinho era um dos jogadores mais pedidos pela população brasileira e por profissionais.</p>
+
+						<p>
+						Porém, no dia 11 de maio, apenas apareceu na lista suplente de Dunga,
+						que consiste na lista de jogadores para substituir outros em caso de lesão ou alguma ocorrência até o inicio da Copa.
+						</p>
+					
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
+	<section id="titulos">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Títulos</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/trofeu.png" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p><strong>Grêmio</strong></p>
+						
+						<ul>
+						<li>Campeonato Gaúcho: 1999</li>
+						<li>Copa Sul: 1999</li>
+						</ul>
+						
+						<p><strong>Paris Saint-Germain</strong></p>
+						
+						<ul>
+						<li>Copa Intertoto da UEFA: 2001</li>
+						<li>Trofeo de la Ceramica: 2001</li>
+						</ul>
+						
+						<p><strong>Barcelona</strong></p>
+						
+						<ul>
+						<li>Liga dos Campeões da UEFA: 2005-06</li>
+						<li>La Liga: 2004-05, 2005-06</li>
+						<li>Supercopa da Espanha: 2005, 2006</li>
+						<li>Copa Cataluña: 2003–04, 2004–05, 2006–07</li>
+						<li>Troféu Joan Gamper: 2003, 2004, 2006, 2007, 2008</li>
+						<li>Trofeo Festa d'Elx: 2003</li>
+						<li>Trofeo Centenario Vilafranca: 2004</li>
+						<li>Copa Ciudad de Saitama: 2005</li>
+						<li>Copa Franz Beckenbauer: 2007</li>
+						</ul>
+						
+						<p><strong>Milan</strong></p>
+						<ul>
+						<li>Serie A: 2010-11</li>
+						<li>Trofeo Luigi Berlusconi: 2008, 2009, 2011</li>
+						<li>Trofeo del Exodo: 2008</li>
+						<li>Trofeo TIM: 2008</li>
+						</ul>
+						
+						<p><strong>Flamengo</strong></p>
+						
+						<ul>
+						<li>Campeonato Carioca: 2011</li>
+						<li>Taça Guanabara: 2011</li>
+						<li>Taça Rio: 2011</li>
+						</ul>
+						
+						<p><strong>Atlético Mineiro</strong></p>
+						
+						<ul>
+						<li>Campeonato Mineiro de Futebol: 2013</li>
+						<li>Copa Libertadores da América: 2013</li>
+						<li>Recopa Sul-Americana: 2014</li>
+						</ul>
+						
+						<p><strong>Querétaro</strong></p>
+						
+						<ul>
+						<li>Copa El Rancho: 2015</li>
+						</ul>
+						
+						<p><strong>Seleção Brasileira</strong></p>
+						
+						<ul>
+						<li>Copa do Mundo: 2002</li>
+						<li>Copa das Confederações: 2005</li>
+						<li>Copa América: 1999</li>
+						<li>Mundial Sub-17: 1997</li>
+						<li>Jogos Olímpicos: Bronze em 2008</li>
+						<li>Superclássico das Américas: 2011</li>
+						</ul>
+					
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
+	<section id="premios">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h2>Prêmios</h2>
+					</div>
+					<figure class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+						<img class="img-responsive" src="imagens/ronaldinhoboladeouro.jpg" alt="conheça a Travel Turismo"/>
+					</figure>
+					
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-7">
+						
+						<p><strong>Prêmios individuais</strong></p>
+						
+						<ul>
+						<li>Revelação do ano no Campeonato Gaúcho: 1999</li>
+						<li>Bola de Ouro da Copa das Confederações de 1999</li>
+						<li>Chuteira de Ouro da Copa das Confederações de 1999</li>
+						<li>Melhor Jogador do Mundo pela FIFA: 2004, 2005</li>
+						<li>Melhor Jogador do Mundo pela World Soccer: 2004, 2005</li>
+						<li>Melhor Jogador do Mundo pela FIFPro: 2005, 2006</li>
+						<li>Melhor jogador estrangeiro da La Liga: 2003–04, 2005–06</li>
+						<li>Troféu EFE: 2003–04</li>
+						<li>Atacante do ano da UEFA: 2004–05</li>
+						<li>Ballon d'Or: 2005</li>
+						<li>Onze d'Or: 2005</li>
+						<li>Jogador do ano da UEFA: 2005–06</li>
+						<li>Bola de Bronze da Copa das Confederações de 2005</li>
+						<li>Bola de Bronze da Copa do Mundo de Clubes de 2006</li>
+						<li>Jogador da Década da Revista World Soccer: 2009</li>
+						<li>Prémio Golden Foot: 2009</li>
+						<li>Melhor atacante - Campeonato Carioca: 2011</li>
+						<li>Craque da Galera do Brasileiro: 2012</li>
+						<li>Craque do Ano Troféu Telê Santana: 2012</li>
+						<li>Melhor Meia - Troféu Guará: 2012</li>
+						<li>Craque do Ano - Troféu Guara: 2012</li>
+						<li>Bola de Ouro da Revista Placar: 2012</li>
+						<li>Melhor jogador Campeonato Mineiro: 2013</li>
+						<li>Futebolista Sul-Americano do Ano: 2013</li>
+						<li>Melhor jogador da Copa Libertadores de futebol : 2013</li>
+						<li>Décimo melhor jogador da História do Campeonato Francês</li>
+						<li>Prêmio de Trajetória Esportiva (Mundo Desportivo): 2016</li>
+						</ul>
+						
+						<p><strong>Artilharias</strong></p>
+						
+						<ul>
+						<li>Campeonato Gaúcho de 1999 (15 gols)</li>
+						<li>Copa das Confederações de 1999 (6 gols)</li>
+						<li>Torneio Pré-Olímpico Sub-23: 2000 (9 gols)</li>
+						<li>Copa do Mundo de Clubes de 2013 (2 gols)</li>
+						</ul>
+						
+						<p><strong>Coletivos</strong></p>
+						
+						<ul>
+						<li>Bola de Prata da Revista Placar: 2000 e 2011</li>
+						<li>All-Star Team da Copa do Mundo da FIFA: 2002</li>
+						<li>Equipe do ano da UEFA: 2003-04, 2004-05, 2005-06</li>
+						<li>FIFA 100: 2004</li>
+						<li>FIFPro World XI: 2005, 2006, 2007</li>
+						</ul>
+					
+					
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	
+	    <!-- início da galeria -->
+    <section id="galeria">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h2>Galeria</h2>
+						(Clique para ampliar a imagem)
+					</div>
+                </div>
+            </div> 
+            <div>
+                <img src="imagens/galeria/01.jpg" class="thumbnail" width="120" style="float:left;"/>
+                <img src="imagens/galeria/10.jpg" class="thumbnail" width="120" style="float:left;"/>
+                <img src="imagens/galeria/03.jpg" class="thumbnail" width="120" style="float:left;"/>
+                <img src="imagens/galeria/04.jpeg" class="thumbnail" width="120" style="float:left;"/>
+                <img src="imagens/galeria/06.jpg" class="thumbnail" width="120" style="float:left;"/>
+                <img src="imagens/galeria/07.jpg" class="thumbnail" width="120" style="float:left;"/>
+                <img src="imagens/galeria/08.jpg" class="thumbnail" width="120" style="float:left;"/>
+                <img src="imagens/galeria/09.jpg" class="thumbnail" width="120" style="float:left;"/>
+            </div>
+            
+        </div>
+    </section>
+	
+	<div id="popup">
+		<div id="center">
+			<img id="lightbox" src="imagens/01.jpg"/>
+			<img id="close" src="imagens/close.png" alt="close"/>
+		</div> <!-- #center -->
+	</div>	<!-- #popup -->
+	<!-- final da galeria -->
+    
+	<!-- início do formulário -->
+		
+		<section id="faleconosco">
+			
+				<div class="row">
+					<div class="container">
+						<div class="col-xs-12">
+							<div class="page-header">
+								<h2>Compartilhe sua ideia</h2>
+							</div>
+							<div class="col-xs-12">
+								<form class="form-horizontal">
+									<div class="form-group has-info">
+										<label for="nome" class="col-xs-2 control-label">
+											Nome Completo:
+										</label>
+										<div class="col-xs-10">
+											<input type="text" class="form-control" id="nome"/> 
+										</div>
+									</div>
+									<p>&nbsp;</p>
+									
+									<div class="form-group has-info">
+										<label for="email" class="col-xs-2 control-label">
+											E-mail:
+										</label>
+										<div class="col-xs-10">
+											<input type="text" class="form-control" id="email"/> 
+										</div>
+									</div>
+									<p>&nbsp;</p>
+									
+									<div class="form-group has-info">
+										<label for="assunto" class="col-xs-2 control-label">
+											Assunto:
+										</label>
+										<div class="col-xs-10">
+											<select class="form-control" id="assunto">
+											<option></option>
+											<option>Elogio</option>
+											<option>Reclamação</option>
+											<option>Outros assuntos</option>
+											</select>
+										</div>
+									</div>
+									<p>&nbsp;</p>
+								
+									<div class="form-group has-sucess-info">
+										<label for="email" class="col-xs-2 control-label">
+											Já é cadastrado?:
+										</label>
+										<div class="col-xs-10 radio">
+											<label>
+												<input type="radio" name="cliente" id="id1" value="Sim"/>
+												Sim
+											</label>
+											
+											<label>
+												<input type="radio" name="cliente" id="id2" value="Não"/>
+												Não
+											</label>
+										
+										</div>
+									</div>
+									<p>&nbsp;</p>
+								
+								
+									<div class="form-group has-info">
+										<label for="mensagem" class="col-xs-2 control-label">
+											Mensagem:
+										</label>
+										<div class="col-xs-10">
+											<textarea class="form-control" id="mensagem" rows="8" style="resize:none;"> 
+											</textarea>
+										</div>
+									</div>
+									<p>&nbsp;</p>
+									
+									<div class="form-group">
+										<div class="col-xs-offset-2 col-xs-2">
+											<button type="submit"class="btn btn-success">
+												Enviar Formulário
+											</button>
+										</div>	
+									
+										<div class="col-xs-2">
+											<button type="reset"class="btn btn-success">
+												Limpar
+											</button>									
+								
+										</div>
+									</div>
+								</form>
+							</div>
+				</div>
+		</section>
+		
+		<!-- final do formulário -->
+		<!-- início do footer -->
+		
+		<footer>
+			<div class="row">
+				<div class="col-xs-12">
+					<strong>Criador do Site:</strong>Gabriel Ferreira Grassi dos Santos<br/>
+					<strong>Tel</strong>.: 0800-252635<br/>
+					<strong>E-mail:</strong> gferreira2012@hotmail.com
+				</div>
+			</div>
+		</footer>
+		
+    <!-- fim da área de conteúdo -->
+	
+	<!-- fim da área de conteúdo -->
+	
+	
+	<!-- script JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<!-- inserindo JavaScript do Bootstrap -->
+	<!-- Última versão JavaScript compilada e minificada -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+</body>
+</html>
+		
+		
+		
+		
+		
+						
+						
+						
+					
+		
+
+
+
+
+
+
+
